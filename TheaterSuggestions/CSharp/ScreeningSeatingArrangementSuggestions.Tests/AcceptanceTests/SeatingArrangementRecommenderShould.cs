@@ -92,7 +92,6 @@ namespace SeatsSuggestions.Tests.AcceptanceTests
             Check.That(suggestionsAreMade.SeatNames(PricingCategory.First)).ContainsExactly("A3", "A4", "A5");
             Check.That(suggestionsAreMade.SeatNames(PricingCategory.Second)).ContainsExactly("A1", "A2", "A9");
             Check.That(suggestionsAreMade.SeatNames(PricingCategory.Third)).ContainsExactly("E1", "E2", "E3");
-            Check.That(suggestionsAreMade.SeatNames(PricingCategory.Third)).ContainsExactly("E1", "E2", "E3");
             // Fix this bug!
             Check.That(suggestionsAreMade.SeatNames(PricingCategory.Ignored)).ContainsExactly("A1", "A2", "A3");
         }
